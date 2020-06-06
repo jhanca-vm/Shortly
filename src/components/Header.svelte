@@ -15,7 +15,7 @@
     <figure class="sm:mr-6 md:mr-8 lg:mr-12">
       <img src="images/logo.svg" alt="logo">
     </figure>
-    <div id="menu" class="w-11/12 absolute inset-x-0 divide-y divide-grey-200 divide-opacity-25 mx-auto mt-12 px-5 py-10 rounded-lg bg-violet text-white invisible sm:visible sm:static sm:mt-0 sm:p-0 sm:bg-transparent sm:flex sm:justify-between sm:divide-y-0 sm:text-grey-200 sm:mx-0 sm:w-full">
+    <div id="menu" class="w-11/12 absolute z-10 inset-x-0 divide-y divide-grey-200 divide-opacity-25 mx-auto mt-12 px-5 py-10 rounded-lg bg-violet text-white invisible sm:visible sm:static sm:mt-0 sm:p-0 sm:bg-transparent sm:flex sm:justify-between sm:divide-y-0 sm:text-grey-200 sm:mx-0 sm:w-full">
       <ul class="text-center sm:font-bold sm:flex sm:items-center">
         <li class="mb-6 sm:mb-0 sm:hover:text-grey-300 sm:cursor-pointer">Features</li>
         <li class="mb-6 sm:mb-0 sm:ml-4 sm:hover:text-grey-300 sm:cursor-pointer md:ml-6 lg:ml-8">Pricing</li>

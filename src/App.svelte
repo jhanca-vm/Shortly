@@ -13,3 +13,4 @@
 </style>
 
 <Header />
+<Hero />
