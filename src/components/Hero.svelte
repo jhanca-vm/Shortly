@@ -1,3 +1,7 @@
+<script>
+  export let focusScroll;
+</script>
+
 <style>
   figure, img {
     height: 87vw;
@@ -49,6 +53,6 @@
   <div class="pt-5 text-center lg:pt-0 lg:pr-5 lg:pb-24 lg:w-1/2 lg:order-first lg:text-left lg:flex lg:flex-col lg:justify-center">
     <h1 class="font-bold leading-tight text-4xl text-grey-300 md:text-5xl lg:6xl">More than just shorter links</h1>
     <p class="mt-4 leading-relaxed md:text-2xl lg:text-xl lg:mt-1">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-    <button class="mt-6 btn focus:outline-none md:text-2xl sm:px-10 lg:text-lg lg:z-20">Get Started</button>
+    <button on:click={focusScroll()} class="mt-6 btn focus:outline-none md:text-2xl sm:px-10 lg:text-lg lg:z-20">Get Started</button>
   </div>
 </section>

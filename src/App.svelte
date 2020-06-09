@@ -1,6 +1,9 @@
 <script>
   import Header from './components/Header.svelte';
   import Hero from './components/Hero.svelte';
+  import MainContent from './components/MainContent.svelte';
+
+  const focusScroll = () => document.getElementById('texbox').focus({preventScroll:false})
 </script>
 
 <style>
@@ -13,4 +16,5 @@
 </style>
 
 <Header />
-<Hero />
+<Hero {focusScroll}/>
+<MainContent />

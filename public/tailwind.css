@@ -6,4 +6,8 @@
   @apply py-2 rounded-full bg-cyan font-bold text-white px-8;
 }
 
+.main-btn {
+  @apply py-2 rounded-md bg-cyan font-bold text-white px-8;
+}
+
 @tailwind utilities;
