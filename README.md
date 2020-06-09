@@ -1,10 +1,20 @@
-# Svelte template with Tailwind CSS
+# Shortly
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/199px-Svelte_Logo.svg.png)  ![](https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png)
+A challenge from Frontend Mentor: https://rel.ink/kQr4An
 
-This template has PurgeCSS and cssnano integrated.
+![](https://res.cloudinary.com/dz209s6jk/image/upload/v1572260150/Challenges/erg4fyzl3bu0r4kwcvvq.jpg)
+
+## Challenge
+Create a landing page and integrate with rel.ink URL shortening API.
+
+## Used tools
+> Svelte js
+> Tailwind CSS
 
 ## Project setup
+```
+cd Shortly
+```
 
 ```
 npm install
