@@ -17,4 +17,4 @@
 
 <Header />
 <Hero {focusScroll}/>
-<MainContent />
+<MainContent {focusScroll}/>

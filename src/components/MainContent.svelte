@@ -1,6 +1,8 @@
 <script>
   import Description from './Description.svelte';
 
+  export let focusScroll;
+
   let urls = [];
   let alert = false;
 
@@ -59,9 +61,17 @@
     opacity: .5;
   }
 
+  .boost {
+    background-image: url("/images/bg-boost-mobile.svg");
+  }
+
   @media screen and (min-width: 768px) {
     form {
       background-image: url("/images/bg-shorten-desktop.svg");
+    }
+
+    .boost {
+      background-image: url("/images/bg-boost-desktop.svg");
     }
 
     button {
@@ -75,7 +85,7 @@
   }
 </style>
 
-<section class="w-full bg-grey-100 px-5 text-grey-200 bg-opacity-50 mt-40 absolute">
+<section class="w-full bg-grey-100 px-5 text-grey-200 bg-opacity-25 mt-40 absolute">
   <div class="container mx-auto -mt-20">
     <form name="shortener" onsubmit="return false" on:submit={getShortUrl} class="bg-no-repeat md:bg-cover bg-violet md:flex rounded-lg p-6 bg-right-top md:p-12 md:mb-6">
       <div class="w-full md:mr-5 box-border">
@@ -99,4 +109,8 @@
     {/if}
   </div>
   <Description />
+  <div class="boost mt-20 -mx-5 py-16 text-center bg-violet bg-no-repeat bg-cover bg-center lg:py-12 xl:mt-32">
+    <h2 class="text-white font-bold text-2xl sm:text-3xl lg:text-4xl">Boost your links today</h2>
+    <button on:click={focusScroll} class="mt-4 btn focus:outline-none md:text-xl lg:text-lg lg:z-20">Get Started</button>
+  </div>
 </section>

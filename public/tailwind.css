@@ -10,4 +10,12 @@
   @apply py-2 rounded-md bg-cyan font-bold text-white px-8;
 }
 
+.card {
+  @apply bg-white rounded-md px-8 max-w-lg mx-auto;
+}
+
+.icon {
+  @apply bg-violet rounded-full p-5 absolute mx-auto inset-x-0 -mt-10;
+}
+
 @tailwind utilities;

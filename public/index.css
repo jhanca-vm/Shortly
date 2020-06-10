@@ -649,6 +649,32 @@ video {
   padding-right: 2rem;
 }
 
+.card {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  border-radius: 0.375rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  --bg-opacity: 1;
+  background-color: hsl(257, 27%, 26%);
+  background-color: rgba(58.54290000000002, 48.39900000000001, 84.201, var(--bg-opacity));
+  border-radius: 9999px;
+  padding: 1.25rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  margin-top: -2.5rem;
+}
+
 .space-y-0 > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--space-y-reverse)));
