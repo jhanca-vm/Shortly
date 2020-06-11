@@ -61,6 +61,10 @@
     opacity: .5;
   }
 
+  .input {
+    width: 88.89%;
+  }
+
   .boost {
     background-image: url("/images/bg-boost-mobile.svg");
   }
@@ -85,8 +89,8 @@
   }
 </style>
 
-<section class="w-full bg-grey-100 px-5 text-grey-200 bg-opacity-25 mt-40 absolute">
-  <div class="container mx-auto -mt-20">
+<section class="w-full bg-grey-100 px-5 md:px-8 lg:px-10 text-grey-200 bg-opacity-25 mt-40 lg:px-20">
+  <div class="input container mx-auto -mt-20 absolute inset-x-0">
     <form name="shortener" onsubmit="return false" on:submit={getShortUrl} class="bg-no-repeat md:bg-cover bg-violet md:flex rounded-lg p-6 bg-right-top md:p-12 md:mb-6">
       <div class="w-full md:mr-5 box-border">
         <input name="link" id="texbox" class="rounded-md w-full box-border p-3" type="url" placeholder="Shorten a link here..." required on:invalid={showAlert}>
@@ -94,23 +98,25 @@
           <p class="mt-1 text-red-500 md:absolute md:mt-2"><i>Please add a link</i></p>
         {/if}
       </div>
-      <button class="main-btn py-3 mt-4 w-full focus:outline-none md:mt-0 md:w-auto">Shorten It!</button>
+      <button class="main-btn py-3 mt-4 w-full hover:bg-teal-300 focus:outline-none md:mt-0 md:w-auto">Shorten It!</button>
     </form>
-    {#if urls.length !== 0}
+  </div>
+  {#if urls.length !== 0}
+    <div class="pt-24 -mb-24 md:pt-20 md:-mb-16 container mx-auto sm:px-2 md:px-0">
       {#each urls as { url, hashid }, i}
-        <div class="result mt-5 py-4 bg-white divide-y divide-grey-100 divide-opacity-75 rounded-md md:flex md:divide-y-0 md:items-center md:justify-between md:px-6 md:py-4 md:mt-4">
+        <div class="mt-6 py-4 bg-white divide-y divide-grey-100 divide-opacity-75 rounded-md md:flex md:divide-y-0 md:items-center md:justify-between md:px-6 md:py-4 md:mt-4">
           <p class="text-grey-400 px-4 pb-2 md:p-0 truncate">{url}</p>
           <div class="px-4 md:flex md:p-0 md:items-center">
             <p id={hashid} class="text-cyan pb-2 pt-3 md:p-0 md:mx-5">https://rel.ink/{hashid}</p>
-            <button id={i} on:click={copyUrl(hashid), success(i)} class="btn-copy font-medium md:text-sm main-btn w-full md:p-0 focus:outline-none">Copy</button>
+            <button id={i} on:click={copyUrl(hashid), success(i)} class="btn-copy hover:bg-teal-300 font-medium md:text-sm main-btn w-full md:p-0 focus:outline-none">Copy</button>
           </div>
         </div>
       {/each}
-    {/if}
-  </div>
+    </div>
+  {/if}
   <Description />
-  <div class="boost mt-20 -mx-5 py-16 text-center bg-violet bg-no-repeat bg-cover bg-center lg:py-12 xl:mt-32">
+  <div class="boost mt-20 -mx-5 py-16 text-center bg-violet bg-no-repeat bg-cover bg-center lg:-mx-20 xl:mt-32">
     <h2 class="text-white font-bold text-2xl sm:text-3xl lg:text-4xl">Boost your links today</h2>
-    <button on:click={focusScroll} class="mt-4 btn focus:outline-none md:text-xl lg:text-lg lg:z-20">Get Started</button>
+    <button on:click={focusScroll} class="mt-4 btn hover:bg-teal-300 focus:outline-none md:text-xl lg:text-lg lg:z-20">Get Started</button>
   </div>
 </section>

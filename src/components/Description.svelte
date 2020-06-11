@@ -14,7 +14,7 @@
   }
 </style>
 
-<div class="main-text mt-20 text-center md:mt-24 xl:mt-32">
+<div class="main-text pt-40 text-center xl:pt-40">
   <h2 class="text-grey-300 text-3xl leading-tight font-bold md:text-4xl">Advanced Statistics</h2>
   <p class="mt-5 leading-relaxed md:text-xl md:mx-auto md:max-w-2xl lg:text-lg">Track how your links are performing across the web with our advanced statistics dashboard.</p>
 </div>

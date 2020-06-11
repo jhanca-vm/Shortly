@@ -10,7 +10,7 @@
   };
 </script>
 
-<header class="p-5">
+<header class="p-5 md:px-8 lg:pt-6 lg:px-10">
   <nav class="flex justify-between container mx-auto sm:items-center">
     <figure class="sm:mr-6 md:mr-8 lg:mr-12">
       <img src="images/logo.svg" alt="logo">
@@ -23,7 +23,7 @@
       </ul>
       <div class="flex flex-col sm:flex-row">
         <button class="mt-6 focus:outline-none sm:font-bold sm:mt-0 sm:mr-5 lg:mr-6">Login</button>
-        <button class="mt-6 py-2 rounded-full bg-cyan focus:outline-none sm:mt-0 sm:font-bold sm:text-white sm:px-5">Sign Up</button>
+        <button class="mt-6 py-2 rounded-full bg-cyan hover:bg-teal-300 focus:outline-none sm:mt-0 sm:font-bold sm:text-white sm:px-5">Sign Up</button>
       </div>
     </div>
     <span on:click={showHide} class="text-4xl -mt-3 text-grey-200 cursor-pointer sm:hidden">&equiv;</span>
